@@ -236,8 +236,8 @@ const CartContainer: React.FC = () => {
                 </div>
                 {coupenCode && (
                 <div className={styles.availableCoupenCode} >
-                <p><span>1. Use <b>"NEWUSER"</b> Get ₹ 100 off</span> <button>Appply</button></p>
-                <p><span>2. Use <b>"Decor24"</b> Get 2% off </span><button>Appply</button></p>
+                <p><span>1. Use <b>NEWUSER</b> Get ₹ 100 off</span> <button>Appply</button></p>
+                <p><span>2. Use <b>Decor24</b> Get 2% off </span><button>Appply</button></p>
                </div>
                 )}
             </form></div>
