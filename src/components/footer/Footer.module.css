@@ -1,0 +1,134 @@
+.footerwrapper{
+    height: auto;
+    width: 100%;
+    padding: 20px 100px;
+     background: #eae3ff;
+}
+.footer{
+    height: auto;
+    width: 100%;
+    box-shadow:
+    0px 0px 1.9px rgba(0, 0, 0, 0),
+    0px 0px 4.3px rgba(0, 0, 0, 0),
+    0px 0px 7.7px rgba(0, 0, 0, 0),
+    0px 0px 12.8px rgba(0, 0, 0, 0.038),
+    0px 0px 21.2px rgba(0, 0, 0, 0.044),
+    0px 0px 37px rgba(0, 0, 0, 0),
+    0px 0px 80px rgba(0, 0, 0, 0.07)
+  ;
+   background: #fff;
+   border-radius: 20px;
+   padding: 0px 10px;
+}
+.footerContent{
+    /* border-radius: 10px; */
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 10px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(23%, 2fr));
+gap: 20px;
+}
+.footerContent > div{
+    height: auto;
+    padding: 10px;
+}
+.footerContent > div > p{ 
+    font-size: 1.8em;
+    color: var(--black);
+    font-weight: 600;
+}
+.footerContent > div > a{
+    display: block;
+    margin: 1em 0em;
+    color: #808080;
+    font-size: 1.5em;
+    font-weight: 400;
+    transition: all ease .5s;
+}
+.footerContent > div > a:hover{
+   text-decoration: underline;
+}
+.footerContent > div > span{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #282828;
+    text-wrap: nowrap;
+}
+.footerContent > div > div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 1em 0em;
+    gap: 15px;
+}
+.footerContent > div > div > a > img, .footerContent > div > div > img{
+    cursor: pointer;
+    transition: all ease .5s;
+}
+.footerContent > div > div > a > img:hover, .footerContent > div > div > img:hover{
+    transform: translateY(-40%);
+}
+
+/*Quicklinks*/
+.QuicklinksContainer{
+    height: auto;
+    width: 100%;
+    background-color: var(--white);
+    padding: 10px;
+}
+.QuicklinksContainer > h6{
+    font-size: 1.8em;
+    color: var(--black);
+    font-weight: 600;
+    margin: .5em 0em;
+}
+.QuicklinksContainer div > a{
+    font-size: 1.4em;
+    color: #282828;
+    font-weight: 400;
+    transition: all ease .5s;
+}
+.QuicklinksContainer div > a:hover{
+    text-decoration: underline;
+}
+.downFooter{
+    background-color: var(--white);
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+.downFooter > p{
+    font-size: 1.4em;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+}
+@media only screen and (max-width: 1400px){
+    .footerwrapper{
+        padding: 10px 80px;
+    }
+    .footerContent{
+        grid-template-columns: repeat(auto-fit, minmax(30%, 2fr));
+    }
+}
+@media only screen and (max-width: 1250px){
+    .footerwrapper{
+        padding: 10px 60px;
+    }
+}
+@media only screen and (max-width: 997px){
+    .footerwrapper{
+        padding: 10px 30px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .footerwrapper{
+        padding: 10px;
+    }
+    .footerContent{
+        grid-template-columns: repeat(auto-fit, minmax(25%, 2fr));
+    }
+}

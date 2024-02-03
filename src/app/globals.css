@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection{
+  color: #ffffff;
+  background-color: #8863fb;
+}
+:root{
+  --white: #fffffff;
+  --black: #000000;
+  --website-theme: #4f3267;
+    --medium-purple: #8863fb;
+    --light-purple: #eae3ff;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: #fff;
+  font-family: 'Poppins',sans-serif;
+  max-width: 1400px;
+  margin: auto;
+}
+a{
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 997px){
+  html{
+    font-size: 55%;
+  }
+}

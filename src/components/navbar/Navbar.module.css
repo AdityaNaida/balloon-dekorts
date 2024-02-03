@@ -1,0 +1,362 @@
+
+.header{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+}
+.navbar{
+    height: auto;
+    width: 100%;
+    padding: 17px 80px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(0,0,0,0.1);
+}
+.menu_btn{
+    display: none;
+    height: 30px;
+    width: 30px;
+}
+.logo{
+    margin-right: 40px;
+}
+.logo > img{
+    height: 50px;
+    width: 250px;
+}
+.user_select_city {
+    font-weight: 400 ;
+    font-size: 1.5em;
+    width: 160px;
+    padding-left: 40px;
+    background-image: url('https://balloondekor.netlify.app/assets/images/icons/location-pointer.svg'),url('https://balloondekor.netlify.app/assets/images/icons/chevron-down.svg');
+    background-repeat: no-repeat,no-repeat;
+    background-position: 15px,90%;
+    background-color: #fff;
+    margin-right: 100px;
+    cursor: pointer;
+}
+.searchDiv{
+    flex: 1;
+}
+.searchDiv > input[type=text]{
+    padding: 12px 20px;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: inherit;
+    color: var(--black);
+    border-radius: 10px;
+    width: 75%;
+    border: none;
+    background: url('https://balloondekor.netlify.app/assets/images/icons/search-line.svg') center right 7px no-repeat, #f3f3f9;
+    background-size: 20px;
+    cursor: pointer;
+}
+.linksContainer{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.linksContainer > a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+.searchPop{
+    display: none;
+}
+.searchPop > img{
+   height: 25px;
+   width: 30px;
+}
+
+
+
+.searchDiv2{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    padding: 10px;
+    /* display: none; */
+}
+.searchDiv2 > input[type=text]{
+    width: 90%;
+    padding: 8px 20px;
+    color: var(--black);
+    border-radius: 4px;
+    border: none;
+    background: url('https://balloondekor.netlify.app/assets/images/icons/search-line.svg') center right 7px no-repeat, #f2eeffd4;
+    cursor: pointer;
+    background-size: 20px;
+    font-weight: 400;
+    font-size: 1.5em;
+    font-family: inherit;
+}
+.mobile_delivery_location{
+    display: none;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.mobile_delivery_location > div{
+    width: 180px;
+    cursor: pointer;
+    padding-left: 40px;
+    background-image: url("https://balloondekor.netlify.app/assets/images/icons/location-pointer.svg"),url("https://balloondekor.netlify.app/assets/images/icons/chevron-down.svg");
+    background-repeat: no-repeat,no-repeat;
+    background-position: 15px,90%;
+    background-color: var(--white);
+    font-size: 1.5em;
+}
+.dynamicLinks{
+    z-index: 10;
+    background: #fff;
+    padding: 10px 80px;
+    height: auto;
+    width: 100%;
+    border-bottom: 0.5px solid rgba(0,0,0,0.1);
+}
+.dynamicLinks > img{
+    display: none;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.dynamicLinks > a{
+    color: var(--black);
+    font-size: 1.5em;
+    font-weight: 300;
+    background-color: var(--white);
+    height: 100%;
+    padding: 10px 20px;
+    transition: all ease .5s;
+    border-bottom: 2px solid var(--white);
+}
+.dynamicLinks > a:hover{
+    color: var(--medium-purple);
+  border-bottom: 2px solid var(--medium-purple);
+  font-weight: 500;
+}
+.Modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+}
+.ModalBox{
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    z-index: 1;
+}
+.closeLocation{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 5;
+    cursor: pointer;
+}
+.location_heading {
+    width: 100%;
+    background-color: var(--light-purple);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0em 0em;
+    position: relative;
+}
+.location_heading > h3{
+   width: 60%;
+   font-size: 2em;
+}
+.ModalBox > form{
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.ModalBox > form > input[type=text]{
+    color: var(--black);
+    padding: 7px 15px;
+    width: 90%;
+    border-radius: 0.5em;
+    border: 1px solid var(--website-theme);
+    outline-color: var(--medium-purple);
+    margin-bottom: 2em;
+    background:  #f2eeffd4;
+    font-family: inherit;
+    font-size: 1.5em;
+}
+.ModalBox > form > p{
+    font-size: 1.5em ;
+}
+.dialougeModal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    overflow: hidden;
+    z-index: 5;
+    width: 35%;
+    height: auto;
+    border-radius: 20px;
+}
+.show{
+    display: flex !important;
+}
+.dynamicLinks2{
+    display: none;
+}
+@media only screen and (max-width: 1250px){
+    .searchDiv{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .linksContainer{
+        margin-left: 0px;
+        /* width: 50%; */
+    }
+    .dynamicLinks{
+        padding: 10px 60px;
+    }
+    .searchPop{
+        display: block;
+    }
+    .linksContainer > a > span{
+        display: none;
+    }
+}
+@media only screen and (max-width: 997px){
+    .navbar, .dynamicLinks{
+        padding: 10px 30px;
+    }
+    .user_select_city, .linksContainer> a[href="/contact"]{
+        display: none;
+    }
+    /* .linksContainer{
+        width: 30%;
+    } */
+    .mobile_delivery_location{
+        display: block;
+    }
+    .dialougeModal{
+        width: 80%;
+    }
+
+}
+@media only screen and (max-width: 768px){
+    .navbar{
+        padding: 10px;
+    }
+    .dialougeModal{
+        width: 90%;
+    }
+    .menu_btn{
+        display: block;
+        height: 20px;
+        width: 20px;
+        margin-right: 3em;
+    }
+    .dynamicLinks{
+        display: none;
+    }
+    .dynamicLinks2{
+        height: 100vh;
+        width: 90%;
+        position: fixed;
+        padding: 0px;
+        top: 0px;
+        left: 0px;
+        box-shadow:
+  5.4px 0.3px 2.2px rgba(0, 0, 0, 0.02),
+  13px 0.8px 5.3px rgba(0, 0, 0, 0.028),
+  24.4px 1.5px 10px rgba(0, 0, 0, 0.035),
+  43.6px 2.7px 17.9px rgba(0, 0, 0, 0.042),
+  81.5px 5px 33.4px rgba(0, 0, 0, 0.05),
+  195px 12px 80px rgba(0, 0, 0, 0.07)
+;
+display: flex;
+flex-direction: column;
+transition: all ease .5s;
+z-index: 10;
+background-color: #FFF;
+    }
+    .dynamicLinks2 > a{
+        color: var(--black);
+    font-size: 1.5em;
+    font-weight: 300;
+    background-color: var(--white);
+    height: auto;
+    padding: 15px 20px;
+    transition: all ease .5s;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    z-index: 10;
+    background-color: #fff;
+    }
+    .dynamicLinks2 > a:hover{
+        color: var(--medium-purple);
+        border-bottom: 2px solid var(--medium-purple);
+    }
+    .dynamicLinks2 > img{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 15;
+    }
+
+    .flex{
+        transform: translateX(0%) !important;
+    }
+    .logo > img{
+        height: auto;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .logo {
+        margin-right: 0px;
+    }
+    .linksContainer{
+        gap: 20px;
+    }
+}
+@media only screen and (max-width: 535px){
+    .logo > img{
+        width: 80%;
+    }
+    .linksContainer{
+        width: 70%;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,194 @@
+.signInContainer{
+    height: auto;
+    width: 100%;
+    padding: 20px 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.loginform{
+    width: 50vw;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+}
+.loginform > img{
+    height: auto;
+    width: 30%;
+}
+.loginform  > form{
+    width: 100%;
+    padding: 10px;
+}
+.loginform  > form > h3{
+    font-weight: 600;
+    font-size: 2.5em;
+    color: #000;
+}
+.loginform  > form > p{
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.loginform  > form > p > span{
+    color: var(--medium-purple);
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+}
+.redStar{
+    color: #ff0000;
+}
+
+.login_input{
+    width: 100%;
+    position: relative;
+    margin: 1em 0em;
+}
+.login_input > label{
+    display: block;
+    font-size: 1.5em ;
+    font-weight: 500;
+    margin: .5em 0em;
+}
+.login_input > input, .login_input > textarea{
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0, 0.2);
+    border-radius: 5px;
+    font-weight: 300 ;
+    font-size: 1.5em;
+    font-family: inherit;
+    border-radius: 10px;
+}
+.login_input > img{
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+
+}
+.login_input > input:focus{
+    box-shadow: 0 0 4px 2px var(--medium-purple);
+    outline-color: var(--medium-purple);
+}
+.loginform > form > input[type="submit"]{
+    display: block;
+    padding: 7px 15px;
+    background-color: var(--medium-purple);
+    font-size: 1.8em;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid var(--medium-purple);
+    border-radius: 10px;
+    margin: 1em 0em;
+    cursor: pointer;
+    font-family: inherit;
+    color: #fff;
+    transition: all ease .5s;
+}
+.loginform > form > input[type="submit"]:hover{
+    background-color: #fff;
+    color: var(--medium-purple);
+}
+.loginform > form > div > p{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+.loginform > form > div{
+    margin: .5em 0em;
+}
+.loginform > form > div > p::before{
+    content: '';
+    left: 0px;
+    height: 1px;
+    width: 30%;
+    background-color: #808080;
+}
+.loginform > form > div > p::after{
+    content: '';
+    right: 0px;
+    height: 1px;
+    width: 30%;
+    background-color: #808080;
+}
+.loginform > form > a, .loginform > form > article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 7px 15px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    margin: .5em 0em;
+    cursor: pointer;
+}
+.loginform > form > span{
+    color: var(--medium-purple);
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.loginform > form > div >  p ~ a, .loginform > form > div >  p + article{
+    display: flex;
+    width: 100%;
+    padding: 7px 15px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #000;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin: .5em 0em;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1250px){
+    .signInContainer{
+        padding: 20px 60px;
+    }
+}
+@media only screen and (max-width: 997px){
+    .signInContainer{
+        padding: 20px 30px;
+    }
+    .loginform > img{
+        display: none;
+    }
+    .loginform{
+        width: 70vw;
+    }
+}
+@media only screen and (max-width: 767px){
+    .signInContainer{
+        padding: 10px;
+    }
+    .loginform{
+        width: 82vw;
+    }
+    .login_input > img{
+        top: 30px;
+    }
+}
+@media only screen and (max-width: 600px){}

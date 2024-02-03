@@ -1,0 +1,519 @@
+.hero{
+    height: auto;
+    width: 100%;
+    padding: 10px 80px;
+}
+.hero >  img{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+.hero_mobile{
+    display: none;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+.hero_mobile > img{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+.exploreCateory{
+    height: auto;
+    background: #f3f3f9;
+    padding: 5px 20px;
+    margin: 0px 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.exploreCateory > h3{
+    display: inline-block;
+    border-bottom: 2px solid var(--medium-purple);
+    font-size: 2em;
+    font-weight: 500;
+    margin: auto;
+    padding-bottom: 5px;
+}
+.categories_sub{
+    height: auto;
+    width: 100%;
+    padding: 10px 0px;
+    background: transparent;
+}
+.category_slide_1 , .category_slide_2{
+    display: grid !important;
+    align-items: center;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(10%, 2fr));
+    background-color: transparent;
+}
+.category_slide_1 > a, .category_slide_2 > a{
+    background-color: transparent;
+    margin: 0.5em 0em;
+    border-radius: 2em;
+}
+.img_hldr{
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    clip-path: polygon(100% 50%, 100% 56.6%, 100% 59.3%, 100% 61.4%, 99.9% 63.2%, 99.9% 64.8%, 99.9% 66.2%, 99.8% 67.5%, 99.8% 68.7%, 99.7% 69.8%, 99.6% 70.8%, 99.5% 71.8%, 99.5% 72.8%, 99.4% 73.7%, 99.3% 74.6%, 99.1% 75.4%, 99% 76.3%, 98.9% 77%, 98.8% 77.8%, 98.6% 78.5%, 98.5% 79.2%, 98.3% 79.9%, 98.1% 80.6%, 98% 81.3%, 97.8% 81.9%, 97.6% 82.5%, 97.4% 83.1%, 97.2% 83.7%, 97% 84.3%, 96.8% 84.8%, 96.5% 85.4%, 96.3% 85.9%, 96% 86.4%, 95.8% 86.9%, 95.5% 87.4%, 95.3% 87.9%, 95% 88.3%, 94.7% 88.8%, 94.4% 89.2%, 94.1% 89.7%, 93.8% 90.1%, 93.4% 90.5%, 93.1% 90.9%, 92.8% 91.3%, 92.4% 91.7%, 92% 92%, 91.7% 92.4%, 91.3% 92.8%, 90.9% 93.1%, 90.5% 93.4%, 90.1% 93.8%, 89.7% 94.1%, 89.2% 94.4%, 88.8% 94.7%, 88.3% 95%, 87.9% 95.3%, 87.4% 95.5%, 86.9% 95.8%, 86.4% 96%, 85.9% 96.3%, 85.4% 96.5%, 84.8% 96.8%, 84.3% 97%, 83.7% 97.2%, 83.1% 97.4%, 82.5% 97.6%, 81.9% 97.8%, 81.3% 98%, 80.6% 98.1%, 79.9% 98.3%, 79.2% 98.5%, 78.5% 98.6%, 77.8% 98.8%, 77% 98.9%, 76.3% 99%, 75.4% 99.1%, 74.6% 99.3%, 73.7% 99.4%, 72.8% 99.5%, 71.8% 99.5%, 70.8% 99.6%, 69.8% 99.7%, 68.7% 99.8%, 67.5% 99.8%, 66.2% 99.9%, 64.8% 99.9%, 63.2% 99.9%, 61.4% 100%, 59.3% 100%, 56.6% 100%, 50% 100%, 43.4% 100%, 40.7% 100%, 38.6% 100%, 36.8% 99.9%, 35.2% 99.9%, 33.8% 99.9%, 32.5% 99.8%, 31.3% 99.8%, 30.2% 99.7%, 29.2% 99.6%, 28.2% 99.5%, 27.2% 99.5%, 26.3% 99.4%, 25.4% 99.3%, 24.6% 99.1%, 23.7% 99%, 23% 98.9%, 22.2% 98.8%, 21.5% 98.6%, 20.8% 98.5%, 20.1% 98.3%, 19.4% 98.1%, 18.7% 98%, 18.1% 97.8%, 17.5% 97.6%, 16.9% 97.4%, 16.3% 97.2%, 15.7% 97%, 15.2% 96.8%, 14.6% 96.5%, 14.1% 96.3%, 13.6% 96%, 13.1% 95.8%, 12.6% 95.5%, 12.1% 95.3%, 11.7% 95%, 11.2% 94.7%, 10.8% 94.4%, 10.3% 94.1%, 9.9% 93.8%, 9.5% 93.4%, 9.1% 93.1%, 8.7% 92.8%, 8.3% 92.4%, 8% 92%, 7.6% 91.7%, 7.2% 91.3%, 6.9% 90.9%, 6.6% 90.5%, 6.2% 90.1%, 5.9% 89.7%, 5.6% 89.2%, 5.3% 88.8%, 5% 88.3%, 4.7% 87.9%, 4.5% 87.4%, 4.2% 86.9%, 4% 86.4%, 3.7% 85.9%, 3.5% 85.4%, 3.2% 84.8%, 3% 84.3%, 2.8% 83.7%, 2.6% 83.1%, 2.4% 82.5%, 2.2% 81.9%, 2% 81.3%, 1.9% 80.6%, 1.7% 79.9%, 1.5% 79.2%, 1.4% 78.5%, 1.2% 77.8%, 1.1% 77%, 1% 76.3%, 0.9% 75.4%, 0.7% 74.6%, 0.6% 73.7%, 0.5% 72.8%, 0.5% 71.8%, 0.4% 70.8%, 0.3% 69.8%, 0.2% 68.7%, 0.2% 67.5%, 0.1% 66.2%, 0.1% 64.8%, 0.1% 63.2%, 0% 61.4%, 0% 59.3%, 0% 56.6%, 0% 50%, 0% 43.4%, 0% 40.7%, 0% 38.6%, 0.1% 36.8%, 0.1% 35.2%, 0.1% 33.8%, 0.2% 32.5%, 0.2% 31.3%, 0.3% 30.2%, 0.4% 29.2%, 0.5% 28.2%, 0.5% 27.2%, 0.6% 26.3%, 0.7% 25.4%, 0.9% 24.6%, 1% 23.7%, 1.1% 23%, 1.2% 22.2%, 1.4% 21.5%, 1.5% 20.8%, 1.7% 20.1%, 1.9% 19.4%, 2% 18.7%, 2.2% 18.1%, 2.4% 17.5%, 2.6% 16.9%, 2.8% 16.3%, 3% 15.7%, 3.2% 15.2%, 3.5% 14.6%, 3.7% 14.1%, 4% 13.6%, 4.2% 13.1%, 4.5% 12.6%, 4.7% 12.1%, 5% 11.7%, 5.3% 11.2%, 5.6% 10.8%, 5.9% 10.3%, 6.2% 9.9%, 6.6% 9.5%, 6.9% 9.1%, 7.2% 8.7%, 7.6% 8.3%, 8% 8%, 8.3% 7.6%, 8.7% 7.2%, 9.1% 6.9%, 9.5% 6.6%, 9.9% 6.2%, 10.3% 5.9%, 10.8% 5.6%, 11.2% 5.3%, 11.7% 5%, 12.1% 4.7%, 12.6% 4.5%, 13.1% 4.2%, 13.6% 4%, 14.1% 3.7%, 14.6% 3.5%, 15.2% 3.2%, 15.7% 3%, 16.3% 2.8%, 16.9% 2.6%, 17.5% 2.4%, 18.1% 2.2%, 18.7% 2%, 19.4% 1.9%, 20.1% 1.7%, 20.8% 1.5%, 21.5% 1.4%, 22.2% 1.2%, 23% 1.1%, 23.7% 1%, 24.6% 0.9%, 25.4% 0.7%, 26.3% 0.6%, 27.2% 0.5%, 28.2% 0.5%, 29.2% 0.4%, 30.2% 0.3%, 31.3% 0.2%, 32.5% 0.2%, 33.8% 0.1%, 35.2% 0.1%, 36.8% 0.1%, 38.6% 0%, 40.7% 0%, 43.4% 0%, 50% 0%, 56.6% 0%, 59.3% 0%, 61.4% 0%, 63.2% 0.1%, 64.8% 0.1%, 66.2% 0.1%, 67.5% 0.2%, 68.7% 0.2%, 69.8% 0.3%, 70.8% 0.4%, 71.8% 0.5%, 72.8% 0.5%, 73.7% 0.6%, 74.6% 0.7%, 75.4% 0.9%, 76.3% 1%, 77% 1.1%, 77.8% 1.2%, 78.5% 1.4%, 79.2% 1.5%, 79.9% 1.7%, 80.6% 1.9%, 81.3% 2%, 81.9% 2.2%, 82.5% 2.4%, 83.1% 2.6%, 83.7% 2.8%, 84.3% 3%, 84.8% 3.2%, 85.4% 3.5%, 85.9% 3.7%, 86.4% 4%, 86.9% 4.2%, 87.4% 4.5%, 87.9% 4.7%, 88.3% 5%, 88.8% 5.3%, 89.2% 5.6%, 89.7% 5.9%, 90.1% 6.2%, 90.5% 6.6%, 90.9% 6.9%, 91.3% 7.2%, 91.7% 7.6%, 92% 8%, 92.4% 8.3%, 92.8% 8.7%, 93.1% 9.1%, 93.4% 9.5%, 93.8% 9.9%, 94.1% 10.3%, 94.4% 10.8%, 94.7% 11.2%, 95% 11.7%, 95.3% 12.1%, 95.5% 12.6%, 95.8% 13.1%, 96% 13.6%, 96.3% 14.1%, 96.5% 14.6%, 96.8% 15.2%, 97% 15.7%, 97.2% 16.3%, 97.4% 16.9%, 97.6% 17.5%, 97.8% 18.1%, 98% 18.7%, 98.1% 19.4%, 98.3% 20.1%, 98.5% 20.8%, 98.6% 21.5%, 98.8% 22.2%, 98.9% 23%, 99% 23.7%, 99.1% 24.6%, 99.3% 25.4%, 99.4% 26.3%, 99.5% 27.2%, 99.5% 28.2%, 99.6% 29.2%, 99.7% 30.2%, 99.8% 31.3%, 99.8% 32.5%, 99.9% 33.8%, 99.9% 35.2%, 99.9% 36.8%, 100% 38.6%, 100% 40.7%, 100% 43.4%);
+}
+.img_hldr > img{
+    height: 100%;
+    width: 100%;
+    transition: all ease .5s;
+    clip-path: polygon(100% 50%, 100% 56.6%, 100% 59.3%, 100% 61.4%, 99.9% 63.2%, 99.9% 64.8%, 99.9% 66.2%, 99.8% 67.5%, 99.8% 68.7%, 99.7% 69.8%, 99.6% 70.8%, 99.5% 71.8%, 99.5% 72.8%, 99.4% 73.7%, 99.3% 74.6%, 99.1% 75.4%, 99% 76.3%, 98.9% 77%, 98.8% 77.8%, 98.6% 78.5%, 98.5% 79.2%, 98.3% 79.9%, 98.1% 80.6%, 98% 81.3%, 97.8% 81.9%, 97.6% 82.5%, 97.4% 83.1%, 97.2% 83.7%, 97% 84.3%, 96.8% 84.8%, 96.5% 85.4%, 96.3% 85.9%, 96% 86.4%, 95.8% 86.9%, 95.5% 87.4%, 95.3% 87.9%, 95% 88.3%, 94.7% 88.8%, 94.4% 89.2%, 94.1% 89.7%, 93.8% 90.1%, 93.4% 90.5%, 93.1% 90.9%, 92.8% 91.3%, 92.4% 91.7%, 92% 92%, 91.7% 92.4%, 91.3% 92.8%, 90.9% 93.1%, 90.5% 93.4%, 90.1% 93.8%, 89.7% 94.1%, 89.2% 94.4%, 88.8% 94.7%, 88.3% 95%, 87.9% 95.3%, 87.4% 95.5%, 86.9% 95.8%, 86.4% 96%, 85.9% 96.3%, 85.4% 96.5%, 84.8% 96.8%, 84.3% 97%, 83.7% 97.2%, 83.1% 97.4%, 82.5% 97.6%, 81.9% 97.8%, 81.3% 98%, 80.6% 98.1%, 79.9% 98.3%, 79.2% 98.5%, 78.5% 98.6%, 77.8% 98.8%, 77% 98.9%, 76.3% 99%, 75.4% 99.1%, 74.6% 99.3%, 73.7% 99.4%, 72.8% 99.5%, 71.8% 99.5%, 70.8% 99.6%, 69.8% 99.7%, 68.7% 99.8%, 67.5% 99.8%, 66.2% 99.9%, 64.8% 99.9%, 63.2% 99.9%, 61.4% 100%, 59.3% 100%, 56.6% 100%, 50% 100%, 43.4% 100%, 40.7% 100%, 38.6% 100%, 36.8% 99.9%, 35.2% 99.9%, 33.8% 99.9%, 32.5% 99.8%, 31.3% 99.8%, 30.2% 99.7%, 29.2% 99.6%, 28.2% 99.5%, 27.2% 99.5%, 26.3% 99.4%, 25.4% 99.3%, 24.6% 99.1%, 23.7% 99%, 23% 98.9%, 22.2% 98.8%, 21.5% 98.6%, 20.8% 98.5%, 20.1% 98.3%, 19.4% 98.1%, 18.7% 98%, 18.1% 97.8%, 17.5% 97.6%, 16.9% 97.4%, 16.3% 97.2%, 15.7% 97%, 15.2% 96.8%, 14.6% 96.5%, 14.1% 96.3%, 13.6% 96%, 13.1% 95.8%, 12.6% 95.5%, 12.1% 95.3%, 11.7% 95%, 11.2% 94.7%, 10.8% 94.4%, 10.3% 94.1%, 9.9% 93.8%, 9.5% 93.4%, 9.1% 93.1%, 8.7% 92.8%, 8.3% 92.4%, 8% 92%, 7.6% 91.7%, 7.2% 91.3%, 6.9% 90.9%, 6.6% 90.5%, 6.2% 90.1%, 5.9% 89.7%, 5.6% 89.2%, 5.3% 88.8%, 5% 88.3%, 4.7% 87.9%, 4.5% 87.4%, 4.2% 86.9%, 4% 86.4%, 3.7% 85.9%, 3.5% 85.4%, 3.2% 84.8%, 3% 84.3%, 2.8% 83.7%, 2.6% 83.1%, 2.4% 82.5%, 2.2% 81.9%, 2% 81.3%, 1.9% 80.6%, 1.7% 79.9%, 1.5% 79.2%, 1.4% 78.5%, 1.2% 77.8%, 1.1% 77%, 1% 76.3%, 0.9% 75.4%, 0.7% 74.6%, 0.6% 73.7%, 0.5% 72.8%, 0.5% 71.8%, 0.4% 70.8%, 0.3% 69.8%, 0.2% 68.7%, 0.2% 67.5%, 0.1% 66.2%, 0.1% 64.8%, 0.1% 63.2%, 0% 61.4%, 0% 59.3%, 0% 56.6%, 0% 50%, 0% 43.4%, 0% 40.7%, 0% 38.6%, 0.1% 36.8%, 0.1% 35.2%, 0.1% 33.8%, 0.2% 32.5%, 0.2% 31.3%, 0.3% 30.2%, 0.4% 29.2%, 0.5% 28.2%, 0.5% 27.2%, 0.6% 26.3%, 0.7% 25.4%, 0.9% 24.6%, 1% 23.7%, 1.1% 23%, 1.2% 22.2%, 1.4% 21.5%, 1.5% 20.8%, 1.7% 20.1%, 1.9% 19.4%, 2% 18.7%, 2.2% 18.1%, 2.4% 17.5%, 2.6% 16.9%, 2.8% 16.3%, 3% 15.7%, 3.2% 15.2%, 3.5% 14.6%, 3.7% 14.1%, 4% 13.6%, 4.2% 13.1%, 4.5% 12.6%, 4.7% 12.1%, 5% 11.7%, 5.3% 11.2%, 5.6% 10.8%, 5.9% 10.3%, 6.2% 9.9%, 6.6% 9.5%, 6.9% 9.1%, 7.2% 8.7%, 7.6% 8.3%, 8% 8%, 8.3% 7.6%, 8.7% 7.2%, 9.1% 6.9%, 9.5% 6.6%, 9.9% 6.2%, 10.3% 5.9%, 10.8% 5.6%, 11.2% 5.3%, 11.7% 5%, 12.1% 4.7%, 12.6% 4.5%, 13.1% 4.2%, 13.6% 4%, 14.1% 3.7%, 14.6% 3.5%, 15.2% 3.2%, 15.7% 3%, 16.3% 2.8%, 16.9% 2.6%, 17.5% 2.4%, 18.1% 2.2%, 18.7% 2%, 19.4% 1.9%, 20.1% 1.7%, 20.8% 1.5%, 21.5% 1.4%, 22.2% 1.2%, 23% 1.1%, 23.7% 1%, 24.6% 0.9%, 25.4% 0.7%, 26.3% 0.6%, 27.2% 0.5%, 28.2% 0.5%, 29.2% 0.4%, 30.2% 0.3%, 31.3% 0.2%, 32.5% 0.2%, 33.8% 0.1%, 35.2% 0.1%, 36.8% 0.1%, 38.6% 0%, 40.7% 0%, 43.4% 0%, 50% 0%, 56.6% 0%, 59.3% 0%, 61.4% 0%, 63.2% 0.1%, 64.8% 0.1%, 66.2% 0.1%, 67.5% 0.2%, 68.7% 0.2%, 69.8% 0.3%, 70.8% 0.4%, 71.8% 0.5%, 72.8% 0.5%, 73.7% 0.6%, 74.6% 0.7%, 75.4% 0.9%, 76.3% 1%, 77% 1.1%, 77.8% 1.2%, 78.5% 1.4%, 79.2% 1.5%, 79.9% 1.7%, 80.6% 1.9%, 81.3% 2%, 81.9% 2.2%, 82.5% 2.4%, 83.1% 2.6%, 83.7% 2.8%, 84.3% 3%, 84.8% 3.2%, 85.4% 3.5%, 85.9% 3.7%, 86.4% 4%, 86.9% 4.2%, 87.4% 4.5%, 87.9% 4.7%, 88.3% 5%, 88.8% 5.3%, 89.2% 5.6%, 89.7% 5.9%, 90.1% 6.2%, 90.5% 6.6%, 90.9% 6.9%, 91.3% 7.2%, 91.7% 7.6%, 92% 8%, 92.4% 8.3%, 92.8% 8.7%, 93.1% 9.1%, 93.4% 9.5%, 93.8% 9.9%, 94.1% 10.3%, 94.4% 10.8%, 94.7% 11.2%, 95% 11.7%, 95.3% 12.1%, 95.5% 12.6%, 95.8% 13.1%, 96% 13.6%, 96.3% 14.1%, 96.5% 14.6%, 96.8% 15.2%, 97% 15.7%, 97.2% 16.3%, 97.4% 16.9%, 97.6% 17.5%, 97.8% 18.1%, 98% 18.7%, 98.1% 19.4%, 98.3% 20.1%, 98.5% 20.8%, 98.6% 21.5%, 98.8% 22.2%, 98.9% 23%, 99% 23.7%, 99.1% 24.6%, 99.3% 25.4%, 99.4% 26.3%, 99.5% 27.2%, 99.5% 28.2%, 99.6% 29.2%, 99.7% 30.2%, 99.8% 31.3%, 99.8% 32.5%, 99.9% 33.8%, 99.9% 35.2%, 99.9% 36.8%, 100% 38.6%, 100% 40.7%, 100% 43.4%);
+}
+.img_hldr > img::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-top: 100%;
+    height: 0;
+}
+.img_hldr > img:hover{
+    transform: scale(1.1);
+}
+.category_slide_1 > a > span, .category_slide_2 > a > span{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: var(--black);
+    margin: 0.5em 0em;
+}
+.homeCategory1, .brithdayThemes {
+    height: auto;
+    width: 100%;
+    padding: 10px 80px;
+    background-color: var(--white);
+}
+.reviews{
+    height: auto;
+    width: 100%;
+    padding: 10px 80px;
+    background-color: var(--light-purple);
+}
+.homeCategory1 > h2, .reviews > h2{
+    font-weight: 500;
+    font-size: 2.5em;
+    color: var(--black);
+}
+.homeCategory1 > p, .reviews > p{
+    color: #282828;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.homeCategory1_wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    margin: 0.7em 0em;
+    background-color: var(--white);
+    justify-content: space-between;
+    gap: 20px;
+}
+.forSomeone {
+    padding: 10px;
+    width: 49%;
+    height: auto;
+}
+.forSomeoneHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed rgba(0,0,0,0.2);
+}
+.forSomeoneHeading > h4 {
+    color: #282828;
+    font-weight: 500;
+    font-size: 2em;
+}
+.forSomeoneHeading > a {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: var(--medium-purple);
+    padding: 5px 10px;
+    transition: all ease .5s;
+    border: 1px solid var(--medium-purple);
+    border-radius: 10px;
+}
+.forSomeoneHeading > a:hover{
+    background: linear-gradient(to right, rgb(222, 87, 229), rgb(136, 99, 251));
+    color: #fff;
+}
+.forSomeoneWrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    padding: 10px 0px;
+    width: 100%;
+}
+.forSomeoneWrapperLeft, .forSomeoneWrapperRight, .forSomeoneWrapperLeft2, .forSomeoneWrapperRight2 {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    height: auto;
+    gap: 15px;
+}
+.forSomeoneWrapperLeft > a, .forSomeoneWrapperRight > a, .forSomeoneWrapperLeft2 > a, .forSomeoneWrapperRight2 > a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 130px;
+    border-radius: 1em;
+    transition: all ease .5s;
+}
+.gradientOverlay {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.1),rgba(0,0,0,0.3));
+    border-radius: 1em;
+}
+.forSomeoneWrapperLeft > a:first-child > img, .forSomeoneWrapperLeft2 > a:first-child > img, .forSomeoneWrapperRight > a:last-child > img, .forSomeoneWrapperRight2 > a:last-child > img {
+    height: 130px;
+    width: 100%;
+    border-radius: 1em;
+}
+.forSomeoneWrapperLeft > a:nth-child(even), .forSomeoneWrapperRight > a:nth-child(odd), .forSomeoneWrapperLeft2 > a:nth-child(even), .forSomeoneWrapperRight2 > a:nth-child(odd) {
+    height: 250px;
+}
+
+.forSomeoneWrapperLeft > a > p, .forSomeoneWrapperRight > a > p, .forSomeoneWrapperLeft2 > a > p, .forSomeoneWrapperRight2 > a > p {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 3;
+    font-weight: 500;
+    font-size: 1.9em;
+    text-transform: capitalize;
+}
+.forSomeoneWrapperLeft > a:last-child > img, .forSomeoneWrapperLeft2 > a:last-child > img, .forSomeoneWrapperRight > a:first-child > img, .forSomeoneWrapperRight2 > a:first-child > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+}
+.brithdayThemesWrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px 0px;
+    gap: 10px;
+    justify-content: center;
+}
+.brithdayThemesWrap1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: none;
+}
+.brithdayThemesWrap1, .brithdayThemesWrap2 {
+    position: relative;
+    width: 49%;
+    height: auto;
+    border-radius: 1em;
+}
+.brithdayThemesWrap2{
+    height: 385px;
+}
+.brithdayThemesWrap1 > a {
+    position: relative;
+    width: 45%;
+    height: 180px;
+    border-radius: 1em;
+}
+.brithdayThemesWrap1 > a > img, .brithdayThemesWrap2 > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+}
+.brithdayThemesWrap1 > a > p, .brithdayThemesWrap2 > p  {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.6em;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+}
+.familmemberWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    background-color: var(--white);
+    margin: 0.7em 0em;
+}
+.familmemberWrapper > a {
+    border: 1px solid rgba(0,0,0,0.2);
+    width: 21%;
+    border-radius: 50% 50% 5px 5px;
+}
+.familmemberWrapper > a > img {
+    height: 290px;
+    width: 100%;
+    border-radius: 50% 50% 0 0;
+}
+.familmemberWrapper > a > p {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #282828;
+    text-align: center;
+    margin: 0.5em 0em;
+}
+.ageSliderWrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.ageSliderWrapper > img {
+    cursor: pointer;
+}
+.ageSlider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    transition: all ease 1s;
+    margin: 0.7em 0em;
+    width: 99%;
+}
+.ageSlider::-webkit-scrollbar{
+    display: none;
+}
+.ageSlides{
+    height: auto;
+    min-width: 200px;
+    text-align: center;
+    padding: 10px 0px;
+    position: relative;
+}
+.ageSlides > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.ageSlides > img::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-top: 100%;
+    height: 0;
+}
+.ageSlides  > p{
+    font-weight: 400;
+    font-size: 1.5em ;
+    color: #282828;
+}
+.testimonials_slider_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.testimonials_slider_wrapper > img{
+   height: 30px;
+   width: 30px;
+   cursor: pointer;
+}
+.testimonials_slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    transition: all ease .5s;
+    width: 95%;
+    height: auto;
+    background-color: var(--light-purple);
+    padding: 15px;
+}
+.testimonials_slider::-webkit-scrollbar{
+    display: none;
+}
+.testimonial_slides {
+    height: 250px;
+    min-width: 30%;
+    border: 1px solid var(--website-theme);
+    outline: 1px solid var(--website-theme);
+    outline-offset: 3px;
+    margin-right: 2em;
+    background-color: var(--white);
+    border-radius: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+}
+.testimonial_slides > img {
+    margin: 0.5em 0em;
+    border-radius: 1em;
+    height: 70px;
+    width: 70px;
+}
+.testimonial_slides > img::before{
+    content: '';
+    position: absolute;
+    padding-top: 100%;
+    height: 0;
+}
+.testimonial_slides > span {
+    color: var(--black);
+    font-weight: 400 ;
+    font-size: 1.5em ;
+    display: flex;
+    align-items: center;
+}
+.testimonial_slides > p > span {
+    display: block;
+    width: 85%;
+    font-weight: 400 ;
+    font-size: 1.5em ;
+    color: var(--black);
+    margin: 0.5em 0em;
+}
+.testimonial_slides > small {
+    color: var(--website-theme);
+    font-weight: 400;
+    font-size: 1.4em ; 
+}
+@media only screen and (max-width: 1250px){
+    .homeCategory1, .brithdayThemes, .reviews, .hero{
+        padding: 10px 60px;
+    }
+    .exploreCateory{
+        padding: 10px;
+        margin: 0px 60px;
+    }
+}
+@media only screen and (max-width: 997px){
+    .homeCategory1, .brithdayThemes, .reviews, .hero{
+        padding: 10px 30px;
+    }
+    .exploreCateory{
+        margin: 0px 30px;
+    }
+}
+@media only screen and (max-width: 768px){
+
+    .hero, .testimonials_slider_wrapper > img{
+        display: none;
+    }
+    .testimonial_slides{
+        height: 230px;
+        min-width: 40%;
+    }
+    .hero_mobile{
+        display: block;
+    }
+    .categories_sub {
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        transition: all ease .5s;
+        padding: 10px;
+    }
+    .categories_sub::-webkit-scrollbar{
+        display: none;
+    }
+    .category_slide_1, .category_slide_2 {
+        grid-template-columns: repeat(auto-fit, minmax(30%, 2fr));
+        gap: 10px;
+        min-width: 100%;
+    }
+    .category_slide_2{
+        margin-left: 2em;
+    }
+    .exploreCateory{
+        margin: 0px 10px;
+    }
+    .homeCategory1, .brithdayThemes, .reviews{
+        padding: 10px;
+    }
+    .img_hldr > img {
+        height: 100px;
+        width: 100px;
+        border-radius: 2em;
+    }
+    .homeCategory1_wrapper, .brithdayThemesWrapper, .familmemberWrapper{
+        flex-wrap: wrap;
+    }
+    .forSomeone{
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .forSomeoneWrapperLeft > a:nth-child(even), .forSomeoneWrapperRight > a:nth-child(odd), .forSomeoneWrapperLeft2 > a:nth-child(even), .forSomeoneWrapperRight2 > a:nth-child(odd) {
+        height: 150px;
+    }
+    .forSomeoneWrapperLeft > a:first-child > img, .forSomeoneWrapperLeft2 > a:first-child > img, .forSomeoneWrapperRight > a:last-child > img, .forSomeoneWrapperRight2 > a:last-child > img {
+        height: 100%;
+    }
+    .forSomeoneWrapperLeft > a:first-child , .forSomeoneWrapperLeft2 > a:first-child , .forSomeoneWrapperRight > a:last-child , .forSomeoneWrapperRight2 > a:last-child {
+        height: 100px;
+    }
+    .brithdayThemesWrap1 , .brithdayThemesWrap2{
+        width: 100%;
+    }
+    .brithdayThemesWrap1 > a {
+        height: 110px ;
+        width: 48%;
+    }
+    .brithdayThemesWrap1 , .familmemberWrapper{
+        gap: 10px;
+    }
+    .brithdayThemesWrap1 > a > p, .brithdayThemesWrap2 > p{
+        top: 80%;
+    }
+    .brithdayThemesWrap2{
+        height: 220px;
+    }
+    .familmemberWrapper > a > img{
+        height: 170px;
+    }
+    .familmemberWrapper > a{
+        width: 48%;
+    }
+    .ageSlides{
+        min-width: 100px;
+    }
+    .ageSliderWrapper > img{
+        display: none;
+    }
+}
+@media only screen and (max-width: 535px){
+    .testimonial_slides{
+        min-width: 65%;
+    }
+    .testimonials_slider{
+        padding: 10px 5px;
+    }
+}
